@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Products Catalog | EBON Aluminum Systems & Insulating Glass</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Explore EBON's comprehensive range of high-performance B2B aluminum doors, casement window profiles, and custom architectural glazing systems. Download CAD files.">
+    
+    <!-- Premium Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ========================================================================
+       1. STICKY HEADER
+       ======================================================================== -->
+    <header class="site-header scrolled">
+        <div class="container">
+            <!-- Brand Logo -->
+            <a href="index.html" class="brand-logo" aria-label="Ebon Home">
+                <img src="assets/logo.png" alt="EBON Logo" class="brand-logo-img">
+            </a>
+            
+            <!-- Desktop Navigation Menu -->
+            <nav class="main-navigation">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link active">Products <i class="fas fa-chevron-down" style="font-size: 10px; margin-left: 4px;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="products.html?cat=doors" class="dropdown-link">Doors Series</a></li>
+                            <li><a href="products.html?cat=windows" class="dropdown-link">Windows Series</a></li>
+                            <li><a href="products.html?cat=thermal" class="dropdown-link">Thermal-Break Systems</a></li>
+                            <li><a href="products.html?cat=glazing" class="dropdown-link">Custom Glazing</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="catalogue.html" class="nav-link">Download Catalogue</a></li>
+                    <li class="nav-item"><a href="cases.html" class="nav-link">Cases</a></li>
+                    <li class="nav-item"><a href="news.html" class="nav-link">News</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Header Right Utilities -->
+            <div class="header-actions">
+                <div class="lang-selector" aria-label="Select Language">
+                    <i class="fas fa-globe"></i>
+                    <span>EN</span>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+                <button class="btn-primary open-quote-modal" style="padding: 10px 20px; font-size: 12px; border-radius: 20px;">
+                    Get A Quote
+                </button>
+                <button class="btn-mobile-menu" aria-label="Toggle Mobile Navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================================================================
+       2. SUBPAGE HERO BANNER
+       ======================================================================== -->
+    <section class="subpage-hero-banner" style="background: linear-gradient(135deg, var(--color-navy-dark), var(--color-navy-mid)); border-bottom: 2px solid var(--color-gold); padding: 150px 0 80px; position: relative; overflow: hidden; text-align: center;">
+        <div style="position: absolute; top:0; left:0; width:100%; height:100%; opacity:0.1; background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center;"></div>
+        <div class="container" style="position: relative; z-index: 2;">
+            <span class="section-subtitle" style="margin-bottom: 8px;">Specifications</span>
+            <h1 style="color: #ffffff; font-size: 42px; text-transform: uppercase; font-family: var(--font-headers);">Product System Catalog</h1>
+            <p style="color: var(--color-text-muted-light); max-width: 600px; margin: 15px auto 0; font-size: 15px;">Advanced thermal break structures and architectural profiles customized for extreme weather conditions.</p>
+        </div>
+    </section>
+
+    <!-- ========================================================================
+       3. INTERACTIVE PRODUCT FILTER SYSTEM
+       ======================================================================== -->
+    <section class="catalog-filter-section" style="padding: 100px 0; background-color: #ffffff;">
+        <div class="container">
+            
+            <!-- Filters Tabs Header -->
+            <div style="display: flex; justify-content: center; gap: 15px; margin-bottom: 50px; flex-wrap: wrap;">
+                <button class="btn-outline filter-tab-btn active" data-filter="all" style="border-radius: 30px; font-size: 12px; padding: 10px 24px;">All Products</button>
+                <button class="btn-outline filter-tab-btn" data-filter="doors" style="border-radius: 30px; font-size: 12px; padding: 10px 24px;">Doors Series</button>
+                <button class="btn-outline filter-tab-btn" data-filter="windows" style="border-radius: 30px; font-size: 12px; padding: 10px 24px;">Windows Series</button>
+                <button class="btn-outline filter-tab-btn" data-filter="glazing" style="border-radius: 30px; font-size: 12px; padding: 10px 24px;">Architectural Glazing</button>
+            </div>
+            
+            <!-- Grid of Cards -->
+            <div class="products-catalog-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-bottom: 80px;">
+                
+                <!-- Product 1: Doors -->
+                <div class="product-item-card reveal-el" data-category="doors" style="background-color: var(--color-bg-light); border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--box-shadow-premium); border: 1px solid rgba(7,22,44,0.05);">
+                    <div style="height: 240px; overflow: hidden; position: relative;">
+                        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="Double Fold Doors" style="width: 100%; height: 100%; object-fit: cover;">
+                        <span style="position: absolute; top: 15px; left: 15px; background: var(--color-navy-dark); color: var(--color-gold); font-size: 10px; font-weight: 700; text-transform: uppercase; padding: 4px 10px; border-radius: 20px; border: 1px solid var(--glass-border);">Heavy Swing</span>
+                    </div>
+                    <div style="padding: 30px;">
+                        <h3 style="font-size: 18px; margin-bottom: 12px;">Premium Double Folding Door</h3>
+                        <p style="font-size: 13px; color: var(--color-text-muted-dark); line-height: 1.6; margin-bottom: 20px;">Designed with ultra slim boundaries and multi-fold tracking assemblies to blend interior space seamlessly with out-of-doors gardens.</p>
+                        <div style="display: flex; gap: 10px;">
+                            <a href="product-detail.html?id=folding-door" class="btn-outline" style="flex: 1; padding: 12px 0; font-size: 11px; justify-content: center; text-decoration: none; border-radius: 4px;">View Specs</a>
+                            <button class="btn-primary open-quote-modal" style="flex: 1; padding: 12px 0; font-size: 11px; justify-content: center; border-radius: 4px;">Get Quote</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2: Windows -->
+                <div class="product-item-card reveal-el" data-category="windows" style="background-color: var(--color-bg-light); border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--box-shadow-premium); border: 1px solid rgba(7,22,44,0.05);">
+                    <div style="height: 240px; overflow: hidden; position: relative;">
+                        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80" alt="Outward Opening Window" style="width: 100%; height: 100%; object-fit: cover;">
+                        <span style="position: absolute; top: 15px; left: 15px; background: var(--color-navy-dark); color: var(--color-gold); font-size: 10px; font-weight: 700; text-transform: uppercase; padding: 4px 10px; border-radius: 20px; border: 1px solid var(--glass-border);">Thermal break</span>
+                    </div>
+                    <div style="padding: 30px;">
+                        <h3 style="font-size: 18px; margin-bottom: 12px;">Outward Casement Window</h3>
+                        <p style="font-size: 13px; color: var(--color-text-muted-dark); line-height: 1.6; margin-bottom: 20px;">Integrated with nylon PA66 heat insulation barriers and concealed hinge tracks for elegant high tightness security sealing.</p>
+                        <div style="display: flex; gap: 10px;">
+                            <a href="product-detail.html?id=casement-window" class="btn-outline" style="flex: 1; padding: 12px 0; font-size: 11px; justify-content: center; text-decoration: none; border-radius: 4px;">View Specs</a>
+                            <button class="btn-primary open-quote-modal" style="flex: 1; padding: 12px 0; font-size: 11px; justify-content: center; border-radius: 4px;">Get Quote</button>
+                        </div>
+                    </div>
+                </div>
+ 
+                <!-- Product 3: Glazing -->
+                <div class="product-item-card reveal-el" data-category="glazing" style="background-color: var(--color-bg-light); border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--box-shadow-premium); border: 1px solid rgba(7,22,44,0.05);">
+                    <div style="height: 240px; overflow: hidden; position: relative;">
+                        <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=600&q=80" alt="Custom Facades" style="width: 100%; height: 100%; object-fit: cover;">
+                        <span style="position: absolute; top: 15px; left: 15px; background: var(--color-navy-dark); color: var(--color-gold); font-size: 10px; font-weight: 700; text-transform: uppercase; padding: 4px 10px; border-radius: 20px; border: 1px solid var(--glass-border);">Facade Glazing</span>
+                    </div>
+                    <div style="padding: 30px;">
+                        <h3 style="font-size: 18px; margin-bottom: 12px;">Structural Glass Wall</h3>
+                        <p style="font-size: 13px; color: var(--color-text-muted-dark); line-height: 1.6; margin-bottom: 20px;">Panoramic floor-to-ceiling curtain wall profiles offering extreme wind resistance ratings for architectural commercial structures.</p>
+                        <div style="display: flex; gap: 10px;">
+                            <a href="product-detail.html?id=glass-wall" class="btn-outline" style="flex: 1; padding: 12px 0; font-size: 11px; justify-content: center; text-decoration: none; border-radius: 4px;">View Specs</a>
+                            <button class="btn-primary open-quote-modal" style="flex: 1; padding: 12px 0; font-size: 11px; justify-content: center; border-radius: 4px;">Get Quote</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Technical Comparison Matrix Table -->
+            <div class="technical-table-wrap reveal-el" style="margin-top: 60px;">
+                <div class="section-title-wrap">
+                    <span class="section-subtitle">Data Matrix</span>
+                    <h2 class="section-title">Technical Specifications</h2>
+                </div>
+                
+                <div style="overflow-x: auto;">
+                    <table style="width: 100%; border-collapse: collapse; min-width: 800px; font-size: 14px; text-align: left;">
+                        <thead>
+                            <tr style="background-color: var(--color-navy-dark); color: #ffffff; border-bottom: 3px solid var(--color-gold);">
+                                <th style="padding: 18px 24px; font-family: var(--font-headers); font-weight: 600;">System Type</th>
+                                <th style="padding: 18px 24px; font-family: var(--font-headers); font-weight: 600;">Profile Material</th>
+                                <th style="padding: 18px 24px; font-family: var(--font-headers); font-weight: 600;">Thickness</th>
+                                <th style="padding: 18px 24px; font-family: var(--font-headers); font-weight: 600;">Glazing Specs</th>
+                                <th style="padding: 18px 24px; font-family: var(--font-headers); font-weight: 600;">U-Value Performance</th>
+                                <th style="padding: 18px 24px; font-family: var(--font-headers); font-weight: 600;">Certification</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid rgba(7, 22, 44, 0.08);">
+                                <td style="padding: 18px 24px; font-weight: 600; color: var(--color-navy-dark);">Folding Doors</td>
+                                <td style="padding: 18px 24px;">6063-T5 Premium Aluminum</td>
+                                <td style="padding: 18px 24px;">2.0mm - 3.0mm</td>
+                                <td style="padding: 18px 24px;">5mm + 12Ar + 5mm Low-E Double</td>
+                                <td style="padding: 18px 24px; font-weight: 600; color: var(--color-gold);">1.6 W/m²K</td>
+                                <td style="padding: 18px 24px;"><span style="background: rgba(76,175,80,0.1); color:#4caf50; padding: 4px 10px; border-radius: 12px; font-size: 11px; font-weight:700;">CE / SGS</span></td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid rgba(7, 22, 44, 0.08); background-color: var(--color-bg-light);">
+                                <td style="padding: 18px 24px; font-weight: 600; color: var(--color-navy-dark);">Casement Windows</td>
+                                <td style="padding: 18px 24px;">6063-T5 Premium Aluminum</td>
+                                <td style="padding: 18px 24px;">1.4mm - 1.8mm</td>
+                                <td style="padding: 18px 24px;">5mm + 9Ar + 5mm + 9Ar + 5mm Triple</td>
+                                <td style="padding: 18px 24px; font-weight: 600; color: var(--color-gold);">1.2 W/m²K</td>
+                                <td style="padding: 18px 24px;"><span style="background: rgba(76,175,80,0.1); color:#4caf50; padding: 4px 10px; border-radius: 12px; font-size: 11px; font-weight:700;">CE / ISO</span></td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid rgba(7, 22, 44, 0.08);">
+                                <td style="padding: 18px 24px; font-weight: 600; color: var(--color-navy-dark);">Curtain Glass Walls</td>
+                                <td style="padding: 18px 24px;">6063-T6 Structural Profile</td>
+                                <td style="padding: 18px 24px;">2.5mm - 3.0mm</td>
+                                <td style="padding: 18px 24px;">6mm Low-E + 12Ar + 6mm Tempered</td>
+                                <td style="padding: 18px 24px; font-weight: 600; color: var(--color-gold);">1.4 W/m²K</td>
+                                <td style="padding: 18px 24px;"><span style="background: rgba(76,175,80,0.1); color:#4caf50; padding: 4px 10px; border-radius: 12px; font-size: 11px; font-weight:700;">CE / SGS</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- ========================================================================
+       4. LEAD CAPTURE & FOOTER WRAPPER
+       ======================================================================== -->
+    <div class="inquiry-footer-wrapper">
+        
+        <!-- CTA inquiry section -->
+        <section class="inquiry-cta-block">
+            <div class="container">
+                <div class="cta-text">
+                    <h3>Ready to Begin Your Project?</h3>
+                    <p>Contact our structural glass engineers for customized B2B specifications and dynamic CAD designs.</p>
+                </div>
+                <button class="btn-primary open-quote-modal" style="padding: 16px 36px; font-size: 15px;">
+                    Get A Free Quote <i class="fas fa-paper-plane" style="margin-left: 8px;"></i>
+                </button>
+            </div>
+        </section>
+        
+        <!-- Main Footer links -->
+        <footer class="main-footer">
+            <div class="container">
+                <!-- About Col -->
+                <div class="footer-column footer-about">
+                    <span class="logo-icon" style="font-size: 26px; color: #ffffff; margin-bottom: 20px; display: inline-block;">EBON</span>
+                    <p>Premium customized thermal break doors and windows engineered with high density profiles and extreme sealing integrity for commercial and residential estates.</p>
+                    <div style="display: flex; gap: 16px; color: var(--color-gold); font-size: 20px;">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Quick links -->
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="cases.html">Cases</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Products list -->
+                <div class="footer-column">
+                    <h4>Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="products.html?cat=doors">Doors Catalog</a></li>
+                        <li><a href="products.html?cat=windows">Windows Catalog</a></li>
+                        <li><a href="products.html?cat=glazing">Custom Facades</a></li>
+                        <li><a href="about.html">3i-Low-E Tech</a></li>
+                        <li><a href="about.html">Nylon Strips</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Newsletter -->
+                <div class="footer-column footer-subscribe">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our catalog updates and green building architectural papers.</p>
+                    <form class="subscribe-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!'); this.reset();">
+                        <input type="email" placeholder="Your Email Address" class="subscribe-input" required>
+                        <button type="submit" class="subscribe-btn" aria-label="Subscribe">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- Bottom bar -->
+        <div class="footer-bottom">
+            <div class="container">
+                <p>Copyright © 2026 Guangdong EBON Doors and Windows Industrial Co., Ltd. - All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================================
+       5. INTERACTIVE FLOATING SIDEBAR WIDGETS
+       ======================================================================== -->
+    <div class="floating-widgets">
+        <!-- Tel Widget -->
+        <a href="tel:+86-13392787196" class="floating-btn" aria-label="Call Ebon Support">
+            <i class="fas fa-phone"></i>
+            <span class="floating-tooltip">Call: +86-13392787196</span>
+        </a>
+        <!-- Whatsapp Widget -->
+        <a href="https://wa.me/8613392787196" target="_blank" class="floating-btn" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+            <span class="floating-tooltip">WhatsApp Live</span>
+        </a>
+        <!-- Dynamic Quote trigger -->
+        <button class="floating-btn open-quote-modal" aria-label="Open Quote Form">
+            <i class="fas fa-file-invoice"></i>
+            <span class="floating-tooltip">Get Free Quote</span>
+        </button>
+        <!-- Search Trigger placeholder -->
+        <button class="floating-btn" aria-label="Search Catalog">
+            <i class="fas fa-search"></i>
+            <span class="floating-tooltip">Search Catalog</span>
+        </button>
+    </div>
+
+    <!-- ========================================================================
+       6. QUOTE MODAL POPUP DIALOG
+       ======================================================================== -->
+    <div id="quoteModal" class="popup-modal-overlay">
+        <div class="quote-modal-box">
+            <button class="close-modal-btn" aria-label="Close Inquiry Dialog"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <h3>Get a Free Quote</h3>
+                <p>Submit your project specification and we will reply within 1 business day.</p>
+            </div>
+            
+            <form id="inquiryForm" class="inquiry-form-body">
+                <!-- Name & Company -->
+                <div class="form-group-row">
+                    <div class="form-group">
+                        <label for="inquiryName" class="form-label">Full Name</label>
+                        <input type="text" id="inquiryName" class="form-input" placeholder="e.g. John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inquiryCompany" class="form-label">Company Name</label>
+                        <input type="text" id="inquiryCompany" class="form-input" placeholder="e.g. Glazing Inc.">
+                    </div>
+                </div>
+                
+                <!-- Email & Phone -->
+                <div class="form-group-row">
+                    <div class="form-group">
+                        <label for="inquiryEmail" class="form-label">Email Address *</label>
+                        <input type="email" id="inquiryEmail" class="form-input" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inquiryPhone" class="form-label">WhatsApp/Phone</label>
+                        <input type="tel" id="inquiryPhone" class="form-input" placeholder="e.g. +1 555-0199">
+                    </div>
+                </div>
+                
+                <!-- Inquiry Message -->
+                <div class="form-group">
+                    <label for="inquiryMessage" class="form-label">Message / Project Requirements *</label>
+                    <textarea id="inquiryMessage" class="form-textarea" placeholder="Describe your window dimensions, glass specifications, and quantities needed..." required></textarea>
+                </div>
+                
+                <!-- Submit -->
+                <div style="text-align: center; margin-top: 30px;">
+                    <button type="submit" class="btn-primary" style="padding: 14px 40px; border-radius: 30px; width: 100%;">
+                        Submit Inquiry Request <i class="fas fa-paper-plane" style="margin-left: 8px;"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Client Script -->
+    <script src="app.js"></script>
+</body>
+</html>

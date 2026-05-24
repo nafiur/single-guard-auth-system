@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>News & Industry Insights | EBON Aluminum Systems & Insulating Glass</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Read articles on glazing science, Low-E thermal performances, polyamide thermal-break insulation, and Guangdong Ebon factory updates.">
+    
+    <!-- Premium Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .news-body-content h3 {
+            font-family: var(--font-headers);
+            color: var(--color-navy-dark);
+            font-size: 20px;
+            margin: 35px 0 15px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        .news-body-content p {
+            margin-bottom: 20px;
+            color: var(--color-text-muted-dark);
+            font-size: 15px;
+            line-height: 1.8;
+        }
+        .news-body-content ul {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+        .news-body-content li {
+            margin-bottom: 8px;
+            list-style-type: square;
+            color: var(--color-text-muted-dark);
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .news-body-content table {
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            margin: 30px 0;
+        }
+        
+        /* Mobile adjustment for news details */
+        @media (max-width: 991px) {
+            .news-grid-container {
+                grid-template-columns: 1fr !important;
+                gap: 40px !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ========================================================================
+       1. STICKY HEADER
+       ======================================================================== -->
+    <header class="site-header scrolled">
+        <div class="container">
+            <!-- Brand Logo -->
+            <a href="index.html" class="brand-logo" aria-label="Ebon Home">
+                <img src="assets/logo.png" alt="EBON Logo" class="brand-logo-img">
+            </a>
+            
+            <!-- Desktop Navigation Menu -->
+            <nav class="main-navigation">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link">Products <i class="fas fa-chevron-down" style="font-size: 10px; margin-left: 4px;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="products.html?cat=doors" class="dropdown-link">Doors Series</a></li>
+                            <li><a href="products.html?cat=windows" class="dropdown-link">Windows Series</a></li>
+                            <li><a href="products.html?cat=thermal" class="dropdown-link">Thermal-Break Systems</a></li>
+                            <li><a href="products.html?cat=glazing" class="dropdown-link">Custom Glazing</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="catalogue.html" class="nav-link">Download Catalogue</a></li>
+                    <li class="nav-item"><a href="cases.html" class="nav-link">Cases</a></li>
+                    <li class="nav-item"><a href="news.html" class="nav-link active">News</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Header Right Utilities -->
+            <div class="header-actions">
+                <div class="lang-selector" aria-label="Select Language">
+                    <i class="fas fa-globe"></i>
+                    <span>EN</span>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+                <button class="btn-primary open-quote-modal" style="padding: 10px 20px; font-size: 12px; border-radius: 20px;">
+                    Get A Quote
+                </button>
+                <button class="btn-mobile-menu" aria-label="Toggle Mobile Navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================================================================
+       2. BREADCRUMBS BAR
+       ======================================================================== -->
+    <section class="breadcrumbs-section" style="padding: 120px 0 20px; background-color: var(--color-bg-light); border-bottom: 1px solid rgba(7,22,44,0.05);">
+        <div class="container">
+            <div style="font-size: 13px; color: var(--color-text-muted-dark); display: flex; gap: 8px; align-items: center;">
+                <a href="index.html" style="color: var(--color-navy-dark); font-weight: 500;">Home</a>
+                <i class="fas fa-chevron-right" style="font-size: 10px;"></i>
+                <a href="news.html" style="color: var(--color-navy-dark); font-weight: 500;">News</a>
+                <i class="fas fa-chevron-right" style="font-size: 10px;"></i>
+                <span style="color: var(--color-gold); font-weight: 600;">Article Details</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================
+       3. ARTICLE LAYOUT (2-COLUMN GRID WITH SIDEBAR)
+       ======================================================================== -->
+    <section style="padding: 60px 0; background-color: #ffffff;">
+        <div class="container news-grid-container" style="display: grid; grid-template-columns: 8fr 4fr; gap: 50px; align-items: flex-start;">
+            
+            <!-- Left Column: News Reader Body -->
+            <div class="reveal-el">
+                
+                <!-- Category, Date, Author metadata -->
+                <div style="margin-bottom: 25px; display: flex; gap: 20px; align-items: center; flex-wrap: wrap; font-size: 11px; text-transform: uppercase; font-family: var(--font-headers); letter-spacing: 0.5px;">
+                    <span id="newsCategory" style="background: rgba(197, 168, 109, 0.1); color: var(--color-gold); font-weight: 700; padding: 6px 14px; border-radius: 20px; border: 1px solid var(--color-gold);">Category</span>
+                    <span style="color: var(--color-text-muted-dark);"><i class="far fa-calendar-alt" style="margin-right: 6px; color: var(--color-gold);"></i> <span id="newsDate">Date</span></span>
+                    <span style="color: var(--color-text-muted-dark);"><i class="far fa-user" style="margin-right: 6px; color: var(--color-gold);"></i> <span id="newsAuthor">Author</span></span>
+                </div>
+                
+                <!-- Title -->
+                <h1 id="newsTitle" style="font-size: 32px; line-height: 1.3; color: var(--color-navy-dark); font-family: var(--font-headers); margin: 0 0 30px 0; font-weight: 700;">Ebon Industry Update</h1>
+                
+                <!-- Main image -->
+                <div style="border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--box-shadow-premium); border: 1px solid rgba(7,22,44,0.05); margin-bottom: 35px;">
+                    <img id="newsMainImg" src="" alt="Featured News Image" style="width: 100%; height: 450px; object-fit: cover;">
+                </div>
+                
+                <!-- Intro paragraph -->
+                <p id="newsIntro" style="font-size: 18px; line-height: 1.7; color: var(--color-navy-dark); font-family: var(--font-headers); font-weight: 500; border-left: 4px solid var(--color-gold); padding-left: 20px; margin-bottom: 30px;"></p>
+                
+                <!-- Dynamic body content -->
+                <div id="newsContent" class="news-body-content">
+                    <!-- Loaded dynamically via app.js -->
+                </div>
+                
+            </div>
+            
+            <!-- Right Column: Sidebar Widgets -->
+            <div class="reveal-el">
+                
+                <!-- Recent posts catalog widget -->
+                <div style="background-color: var(--color-bg-light); border: 1px solid rgba(7,22,44,0.05); border-radius: var(--border-radius); padding: 30px; margin-bottom: 30px;">
+                    <h4 style="font-size: 14px; text-transform: uppercase; color: var(--color-navy-dark); letter-spacing: 1.5px; font-family: var(--font-headers); border-bottom: 2px solid var(--color-gold); padding-bottom: 12px; margin-bottom: 20px;"><i class="far fa-newspaper" style="margin-right: 8px;"></i> Recent Articles</h4>
+                    <div id="relatedArticles">
+                        <!-- Loaded dynamically via app.js -->
+                    </div>
+                </div>
+                
+                <!-- Technical Specs card widget -->
+                <div style="background: linear-gradient(135deg, var(--color-navy-dark) 0%, #0d233e 100%); border: 1px solid var(--glass-border); border-radius: var(--border-radius); padding: 35px 30px; color: #ffffff; margin-bottom: 30px; position: relative; overflow: hidden;">
+                    <div style="position: absolute; right: -25px; bottom: -25px; font-size: 130px; color: rgba(197, 168, 109, 0.04); pointer-events: none;"><i class="far fa-file-pdf"></i></div>
+                    <h4 style="color: var(--color-gold); font-family: var(--font-headers); font-size: 16px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px;">Technical Specs</h4>
+                    <p style="font-size: 13px; color: var(--color-text-muted-light); line-height: 1.6; margin-bottom: 25px;">Download our comprehensive corporate catalog detailing U-values, frame dimensions, and structural blueprints.</p>
+                    <a href="catalogue.html" class="btn-primary" style="display: flex; justify-content: center; width: 100%; padding: 12px; font-size: 12px; text-transform: uppercase; font-family: var(--font-headers); letter-spacing: 1px; border-radius: 20px;">
+                        View Catalogues <i class="fas fa-arrow-right" style="margin-left: 8px;"></i>
+                    </a>
+                </div>
+                
+                <!-- Article Inquiry Lead Form -->
+                <div style="background-color: #ffffff; border: 1px solid rgba(7, 22, 44, 0.05); border-radius: var(--border-radius); padding: 30px; box-shadow: var(--box-shadow-premium);">
+                    <h4 style="font-size: 14px; text-transform: uppercase; color: var(--color-navy-dark); letter-spacing: 1px; font-family: var(--font-headers); margin-bottom: 10px;">Inquire About This</h4>
+                    <p style="font-size: 12px; color: var(--color-text-muted-dark); line-height: 1.5; margin-bottom: 20px;">Interested in our structural glazing or thermal barrier materials? Send a quick query.</p>
+                    <form id="sidebarInquiryForm" style="display: flex; flex-direction: column; gap: 12px;" onsubmit="event.preventDefault(); alert('Lead registered! Our technical engineers will contact you shortly.'); this.reset();">
+                        <input type="text" placeholder="Your Name" style="width: 100%; padding: 10px 14px; border: 1px solid rgba(7,22,44,0.1); border-radius: 6px; font-size: 13px; outline:none;" required>
+                        <input type="email" placeholder="Your Email Address" style="width: 100%; padding: 10px 14px; border: 1px solid rgba(7,22,44,0.1); border-radius: 6px; font-size: 13px; outline:none;" required>
+                        <textarea placeholder="Message..." style="width: 100%; height: 80px; padding: 10px 14px; border: 1px solid rgba(7,22,44,0.1); border-radius: 6px; font-size: 13px; resize: none; outline:none;" required></textarea>
+                        <button type="submit" class="btn-primary" style="padding: 10px; font-size: 12px; text-transform: uppercase; font-family: var(--font-headers); justify-content: center; width: 100%;">Send Inquiry <i class="fas fa-paper-plane" style="margin-left: 6px;"></i></button>
+                    </form>
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- ========================================================================
+       4. LEAD CAPTURE & FOOTER WRAPPER
+       ======================================================================== -->
+    <div class="inquiry-footer-wrapper">
+        
+        <!-- CTA inquiry section -->
+        <section class="inquiry-cta-block">
+            <div class="container">
+                <div class="cta-text">
+                    <h3>Ready to Begin Your Project?</h3>
+                    <p>Contact our structural glass engineers for customized B2B specifications and dynamic CAD designs.</p>
+                </div>
+                <button class="btn-primary open-quote-modal" style="padding: 16px 36px; font-size: 15px;">
+                    Get A Free Quote <i class="fas fa-paper-plane" style="margin-left: 8px;"></i>
+                </button>
+            </div>
+        </section>
+        
+        <!-- Main Footer links -->
+        <footer class="main-footer">
+            <div class="container">
+                <!-- About Col -->
+                <div class="footer-column footer-about">
+                    <span class="logo-icon" style="font-size: 26px; color: #ffffff; margin-bottom: 20px; display: inline-block;">EBON</span>
+                    <p>Premium customized thermal break doors and windows engineered with high density profiles and extreme sealing integrity for commercial and residential estates.</p>
+                    <div style="display: flex; gap: 16px; color: var(--color-gold); font-size: 20px;">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Quick links -->
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="cases.html">Cases</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Products list -->
+                <div class="footer-column">
+                    <h4>Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="products.html?cat=doors">Doors Catalog</a></li>
+                        <li><a href="products.html?cat=windows">Windows Catalog</a></li>
+                        <li><a href="products.html?cat=glazing">Custom Facades</a></li>
+                        <li><a href="about.html">3i-Low-E Tech</a></li>
+                        <li><a href="about.html">Nylon Strips</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Newsletter -->
+                <div class="footer-column footer-subscribe">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our catalog updates and green building architectural papers.</p>
+                    <form class="subscribe-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!'); this.reset();">
+                        <input type="email" placeholder="Your Email Address" class="subscribe-input" required>
+                        <button type="submit" class="subscribe-btn" aria-label="Subscribe">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- Bottom bar -->
+        <div class="footer-bottom">
+            <div class="container">
+                <p>Copyright © 2026 Guangdong EBON Doors and Windows Industrial Co., Ltd. - All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================================
+       6. INTERACTIVE FLOATING SIDEBAR WIDGETS
+       ======================================================================== -->
+    <div class="floating-widgets">
+        <!-- Tel Widget -->
+        <a href="tel:+86-13392787196" class="floating-btn" aria-label="Call Ebon Support">
+            <i class="fas fa-phone"></i>
+            <span class="floating-tooltip">Call: +86-13392787196</span>
+        </a>
+        <!-- Whatsapp Widget -->
+        <a href="https://wa.me/8613392787196" target="_blank" class="floating-btn" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+            <span class="floating-tooltip">WhatsApp Live</span>
+        </a>
+        <!-- Dynamic Quote trigger -->
+        <button class="floating-btn open-quote-modal" aria-label="Open Quote Form">
+            <i class="fas fa-file-invoice"></i>
+            <span class="floating-tooltip">Get Free Quote</span>
+        </button>
+        <!-- Search Trigger placeholder -->
+        <button class="floating-btn" aria-label="Search Catalog">
+            <i class="fas fa-search"></i>
+            <span class="floating-tooltip">Search Catalog</span>
+        </button>
+    </div>
+
+    <!-- ========================================================================
+       7. QUOTE MODAL POPUP DIALOG
+       ======================================================================== -->
+    <div id="quoteModal" class="popup-modal-overlay">
+        <div class="quote-modal-box">
+            <button class="close-modal-btn" aria-label="Close Inquiry Dialog"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <h3>Get a Free Quote</h3>
+                <p>Submit your project specification and we will reply within 1 business day.</p>
+            </div>
+            
+            <form id="inquiryForm" class="inquiry-form-body">
+                <!-- Name & Company -->
+                <div class="form-group-row">
+                    <div class="form-group">
+                        <label for="inquiryName" class="form-label">Full Name</label>
+                        <input type="text" id="inquiryName" class="form-input" placeholder="e.g. John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inquiryCompany" class="form-label">Company Name</label>
+                        <input type="text" id="inquiryCompany" class="form-input" placeholder="e.g. Glazing Inc.">
+                    </div>
+                </div>
+                
+                <!-- Email & Phone -->
+                <div class="form-group-row">
+                    <div class="form-group">
+                        <label for="inquiryEmail" class="form-label">Email Address *</label>
+                        <input type="email" id="inquiryEmail" class="form-input" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inquiryPhone" class="form-label">WhatsApp/Phone</label>
+                        <input type="tel" id="inquiryPhone" class="form-input" placeholder="e.g. +1 555-0199">
+                    </div>
+                </div>
+                
+                <!-- Inquiry Message -->
+                <div class="form-group">
+                    <label for="inquiryMessage" class="form-label">Message / Project Requirements *</label>
+                    <textarea id="inquiryMessage" class="form-textarea" placeholder="Describe your window dimensions, glass specifications, and quantities needed..." required></textarea>
+                </div>
+                
+                <!-- Submit -->
+                <div style="text-align: center; margin-top: 30px;">
+                    <button type="submit" class="btn-primary" style="padding: 14px 40px; border-radius: 30px; width: 100%;">
+                        Submit Inquiry Request <i class="fas fa-paper-plane" style="margin-left: 8px;"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Client Script -->
+    <script src="app.js"></script>
+</body>
+</html>

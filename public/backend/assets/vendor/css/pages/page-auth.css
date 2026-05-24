@@ -1,0 +1,123 @@
+.authentication-wrapper {
+  display: flex;
+  flex-basis: 100%;
+  min-height: 100vh;
+  width: 100%;
+}
+.authentication-wrapper .authentication-inner {
+  width: 100%;
+}
+.authentication-wrapper.authentication-basic {
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  padding: 2rem 1rem;
+  background: #f4f6fb;
+}
+.authentication-wrapper.authentication-cover {
+  align-items: flex-start;
+}
+.authentication-wrapper.authentication-cover .authentication-inner {
+  height: 100vh;
+}
+.authentication-wrapper.authentication-basic .authentication-inner {
+  max-width: 27rem;
+  position: relative;
+}
+.authentication-wrapper.authentication-basic .authentication-inner .card {
+  z-index: 1;
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: 0 18px 40px rgba(16, 24, 40, 0.12);
+  background-color: rgba(255, 255, 255, 0.96);
+}
+.authentication-wrapper.authentication-basic .authentication-inner .card .app-brand {
+  margin-bottom: 1.75rem;
+}
+.authentication-wrapper.authentication-basic .card-body {
+  padding: 2.25rem 1.5rem 1.75rem;
+}
+.authentication-wrapper.authentication-basic h4 {
+  font-weight: 600;
+  color: #1f3454;
+}
+.authentication-wrapper.authentication-basic .text-center {
+  color: #5d6b82;
+}
+.authentication-wrapper.authentication-basic .form-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #5b6881;
+}
+.authentication-wrapper.authentication-basic .form-control,
+.authentication-wrapper.authentication-basic .input-group-text {
+  border-radius: 0.55rem;
+  border-color: #d8deea;
+}
+.authentication-wrapper.authentication-basic .form-control {
+  min-height: 2.7rem;
+}
+.authentication-wrapper.authentication-basic .form-control:focus {
+  border-color: #6b8dff;
+  box-shadow: 0 0 0 0.2rem rgba(107, 141, 255, 0.18);
+}
+.authentication-wrapper.authentication-basic .input-group-text {
+  background-color: #f7f9fd;
+}
+.authentication-wrapper.authentication-basic .btn.btn-primary {
+  border: 0;
+  border-radius: 0.6rem;
+  min-height: 2.55rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #5c8dff 0%, #4a79eb 100%);
+  box-shadow: 0 8px 18px rgba(74, 121, 235, 0.35);
+}
+.authentication-wrapper.authentication-basic .btn.btn-primary:hover,
+.authentication-wrapper.authentication-basic .btn.btn-primary:focus {
+  background: linear-gradient(135deg, #4f82f7 0%, #3f6fdf 100%);
+}
+.authentication-wrapper.authentication-basic a {
+  color: #4a79eb;
+}
+.authentication-wrapper.authentication-basic .form-check-label {
+  color: #5b6881;
+}
+.authentication-wrapper .auth-input-wrapper .auth-input {
+  max-width: 50px;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  font-size: 150%;
+}
+
+.authentication-cover-img {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 575.98px) {
+  .authentication-wrapper .auth-input-wrapper .auth-input {
+    font-size: 1.125rem;
+  }
+  .authentication-wrapper.authentication-basic .card-body {
+    padding: 1.5rem 1rem 1.25rem;
+  }
+}
+#twoStepsForm .fv-plugins-bootstrap5-row-invalid .form-control {
+  border-color: #ff5b5c;
+}
+
+.light-style .authentication-wrapper .authentication-bg {
+  background-color: #fff;
+}
+
+.dark-style .authentication-wrapper .authentication-bg {
+  background-color: rgb(39.6, 49.2, 67.6);
+}
+
+@media (min-height: 737px) {
+  .authentication-cover-img {
+    margin-bottom: 3rem;
+  }
+}
+

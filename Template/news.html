@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Newsroom | EBON Industry Insights & Corporate News</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Keep up with EBON's corporate announcements, scientific glazing whitepapers, green building thermal-break reports, and global trade exhibition plans.">
+    
+    <!-- Premium Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ========================================================================
+       1. STICKY HEADER
+       ======================================================================== -->
+    <header class="site-header scrolled">
+        <div class="container">
+            <!-- Brand Logo -->
+            <a href="index.html" class="brand-logo" aria-label="Ebon Home">
+                <img src="assets/logo.png" alt="EBON Logo" class="brand-logo-img">
+            </a>
+            
+            <!-- Desktop Navigation Menu -->
+            <nav class="main-navigation">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link">Products <i class="fas fa-chevron-down" style="font-size: 10px; margin-left: 4px;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="products.html?cat=doors" class="dropdown-link">Doors Series</a></li>
+                            <li><a href="products.html?cat=windows" class="dropdown-link">Windows Series</a></li>
+                            <li><a href="products.html?cat=thermal" class="dropdown-link">Thermal-Break Systems</a></li>
+                            <li><a href="products.html?cat=glazing" class="dropdown-link">Custom Glazing</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="catalogue.html" class="nav-link">Download Catalogue</a></li>
+                    <li class="nav-item"><a href="cases.html" class="nav-link">Cases</a></li>
+                    <li class="nav-item"><a href="news.html" class="nav-link active">News</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Header Right Utilities -->
+            <div class="header-actions">
+                <div class="lang-selector" aria-label="Select Language">
+                    <i class="fas fa-globe"></i>
+                    <span>EN</span>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+                <button class="btn-primary open-quote-modal" style="padding: 10px 20px; font-size: 12px; border-radius: 20px;">
+                    Get A Quote
+                </button>
+                <button class="btn-mobile-menu" aria-label="Toggle Mobile Navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================================================================
+       2. SUBPAGE HERO BANNER
+       ======================================================================== -->
+    <section class="subpage-hero-banner" style="background: linear-gradient(135deg, var(--color-navy-dark), var(--color-navy-mid)); border-bottom: 2px solid var(--color-gold); padding: 150px 0 80px; position: relative; overflow: hidden; text-align: center;">
+        <div style="position: absolute; top:0; left:0; width:100%; height:100%; opacity:0.1; background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center;"></div>
+        <div class="container" style="position: relative; z-index: 2;">
+            <span class="section-subtitle" style="margin-bottom: 8px;">Newsroom</span>
+            <h1 style="color: #ffffff; font-size: 42px; text-transform: uppercase; font-family: var(--font-headers);">Ebon Industry News</h1>
+            <p style="color: var(--color-text-muted-light); max-width: 600px; margin: 15px auto 0; font-size: 15px;">Discover technical updates, sustainable glazing innovations, and Ebon's recent international achievements.</p>
+        </div>
+    </section>
+
+    <!-- ========================================================================
+       3. NEWS GRID & ARTICLES LIST
+       ======================================================================== -->
+    <section class="news-list-section" style="padding: 100px 0; background-color: #ffffff;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+                
+                <!-- Article 1 -->
+                <div class="news-featured-card reveal-el" style="background-color: var(--color-bg-light); border: 1px solid rgba(7, 22, 44, 0.05); border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--box-shadow-premium); display: flex; flex-direction: column; height: 100%;">
+                    <div style="height: 220px; overflow: hidden; position: relative;">
+                        <a href="news-detail.html?id=quality-brand-2025" style="display: block; width: 100%; height: 100%;">
+                            <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=800&q=80" alt="Ebon Reputation Benchmark Award" style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-slow);">
+                        </a>
+                        <span style="position: absolute; top: 15px; left: 15px; background: var(--color-gold); color: var(--color-navy-dark); font-size: 10px; font-weight: 700; text-transform: uppercase; padding: 4px 10px; border-radius: 20px;">Corporate Award</span>
+                    </div>
+                    <div style="padding: 30px; display: flex; flex-direction: column; flex-grow: 1;">
+                        <span style="font-size: 12px; color: var(--color-text-muted-dark); font-weight: 500; margin-bottom: 12px; display: block;">Oct 21, 2025</span>
+                        <h3 style="font-size: 18px; margin-bottom: 12px; line-height: 1.4;"><a href="news-detail.html?id=quality-brand-2025" style="color: var(--color-navy-dark); text-decoration: none; transition: var(--transition-fast);">Ebon Tongtai Wins Home Consumer Reputation benchmark award</a></h3>
+                        <p style="font-size: 13px; color: var(--color-text-muted-dark); line-height: 1.6; margin-bottom: 20px;">Recognized by major building and home organizations in Foshan for outstanding commitment to green architectural standards and insulated manufacturing safety.</p>
+                        <a href="news-detail.html?id=quality-brand-2025" style="color: var(--color-gold); font-size: 13px; font-weight: 600; margin-top: auto; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; transition: var(--transition-fast);">Read Full Article <i class="fas fa-chevron-right" style="font-size: 10px;"></i></a>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="news-featured-card reveal-el" style="background-color: var(--color-bg-light); border: 1px solid rgba(7, 22, 44, 0.05); border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--box-shadow-premium); display: flex; flex-direction: column; height: 100%;">
+                    <div style="height: 220px; overflow: hidden; position: relative;">
+                        <a href="news-detail.html?id=lowe-insulation-king" style="display: block; width: 100%; height: 100%;">
+                            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" alt="3i-Low-E Glazing Systems" style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-slow);">
+                        </a>
+                        <span style="position: absolute; top: 15px; left: 15px; background: var(--color-gold); color: var(--color-navy-dark); font-size: 10px; font-weight: 700; text-transform: uppercase; padding: 4px 10px; border-radius: 20px;">Glazing Science</span>
+                    </div>
+                    <div style="padding: 30px; display: flex; flex-direction: column; flex-grow: 1;">
+                        <span style="font-size: 12px; color: var(--color-text-muted-dark); font-weight: 500; margin-bottom: 12px; display: block;">Sep 12, 2025</span>
+                        <h3 style="font-size: 18px; margin-bottom: 12px; line-height: 1.4;"><a href="news-detail.html?id=lowe-insulation-king" style="color: var(--color-navy-dark); text-decoration: none; transition: var(--transition-fast);">The King of Thermal Insulation Performance: 3i-Low-E Glass Systems</a></h3>
+                        <p style="font-size: 13px; color: var(--color-text-muted-dark); line-height: 1.6; margin-bottom: 20px;">A comprehensive whitepaper breaking down how our multi-pane architectural glazing systems retain heat in winter and isolate high temperature solar beams in tropical summers.</p>
+                        <a href="news-detail.html?id=lowe-insulation-king" style="color: var(--color-gold); font-size: 13px; font-weight: 600; margin-top: auto; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; transition: var(--transition-fast);">Read Full Article <i class="fas fa-chevron-right" style="font-size: 10px;"></i></a>
+                    </div>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="news-featured-card reveal-el" style="background-color: var(--color-bg-light); border: 1px solid rgba(7, 22, 44, 0.05); border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--box-shadow-premium); display: flex; flex-direction: column; height: 100%;">
+                    <div style="height: 220px; overflow: hidden; position: relative;">
+                        <a href="news-detail.html?id=top-10-brands" style="display: block; width: 100%; height: 100%;">
+                            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Top 10 Influential Brands" style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-slow);">
+                        </a>
+                        <span style="position: absolute; top: 15px; left: 15px; background: var(--color-gold); color: var(--color-navy-dark); font-size: 10px; font-weight: 700; text-transform: uppercase; padding: 4px 10px; border-radius: 20px;">Brand Recognition</span>
+                    </div>
+                    <div style="padding: 30px; display: flex; flex-direction: column; flex-grow: 1;">
+                        <span style="font-size: 12px; color: var(--color-text-muted-dark); font-weight: 500; margin-bottom: 12px; display: block;">Aug 25, 2025</span>
+                        <h3 style="font-size: 18px; margin-bottom: 12px; line-height: 1.4;"><a href="news-detail.html?id=top-10-brands" style="color: var(--color-navy-dark); text-decoration: none; transition: var(--transition-fast);">Ebon Tongtai Re-elected as Top 10 Influential Brands of Aluminum Alloy Systems</a></h3>
+                        <p style="font-size: 13px; color: var(--color-text-muted-dark); line-height: 1.6; margin-bottom: 20px;">EBON maintains its position in the premium ranks of China's aluminum system industry, recognized for our innovative double weather-seal patents.</p>
+                        <a href="news-detail.html?id=top-10-brands" style="color: var(--color-gold); font-size: 13px; font-weight: 600; margin-top: auto; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; transition: var(--transition-fast);">Read Full Article <i class="fas fa-chevron-right" style="font-size: 10px;"></i></a>
+                    </div>
+                </div>
+
+                <!-- Article 4 -->
+                <div class="news-featured-card reveal-el" style="background-color: var(--color-bg-light); border: 1px solid rgba(7, 22, 44, 0.05); border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--box-shadow-premium); display: flex; flex-direction: column; height: 100%;">
+                    <div style="height: 220px; overflow: hidden; position: relative;">
+                        <a href="news-detail.html?id=nylon-integrity" style="display: block; width: 100%; height: 100%;">
+                            <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80" alt="Nylon PA66 strips" style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-slow);">
+                        </a>
+                        <span style="position: absolute; top: 15px; left: 15px; background: var(--color-gold); color: var(--color-navy-dark); font-size: 10px; font-weight: 700; text-transform: uppercase; padding: 4px 10px; border-radius: 20px;">Material R&D</span>
+                    </div>
+                    <div style="padding: 30px; display: flex; flex-direction: column; flex-grow: 1;">
+                        <span style="font-size: 12px; color: var(--color-text-muted-dark); font-weight: 500; margin-bottom: 12px; display: block;">Jul 04, 2025</span>
+                        <h3 style="font-size: 18px; margin-bottom: 12px; line-height: 1.4;"><a href="news-detail.html?id=nylon-integrity" style="color: var(--color-navy-dark); text-decoration: none; transition: var(--transition-fast);">Advanced PA66 Nylon Insulation Strips: Material Integrity</a></h3>
+                        <p style="font-size: 13px; color: var(--color-text-muted-dark); line-height: 1.6; margin-bottom: 20px;">Why EBON exclusively utilizes high-grade German import-grade polyamide strips reinforced with glass fiber (PA66GF25) for extreme thermal barrier security.</p>
+                        <a href="news-detail.html?id=nylon-integrity" style="color: var(--color-gold); font-size: 13px; font-weight: 600; margin-top: auto; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; transition: var(--transition-fast);">Read Full Article <i class="fas fa-chevron-right" style="font-size: 10px;"></i></a>
+                    </div>
+                </div>
+
+                <!-- Article 5 -->
+                <div class="news-featured-card reveal-el" style="background-color: var(--color-bg-light); border: 1px solid rgba(7, 22, 44, 0.05); border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--box-shadow-premium); display: flex; flex-direction: column; height: 100%;">
+                    <div style="height: 220px; overflow: hidden; position: relative;">
+                        <a href="news-detail.html?id=wind-resistance" style="display: block; width: 100%; height: 100%;">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Wind load engineering" style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-slow);">
+                        </a>
+                        <span style="position: absolute; top: 15px; left: 15px; background: var(--color-gold); color: var(--color-navy-dark); font-size: 10px; font-weight: 700; text-transform: uppercase; padding: 4px 10px; border-radius: 20px;">Structural Engineering</span>
+                    </div>
+                    <div style="padding: 30px; display: flex; flex-direction: column; flex-grow: 1;">
+                        <span style="font-size: 12px; color: var(--color-text-muted-dark); font-weight: 500; margin-bottom: 12px; display: block;">Jun 18, 2025</span>
+                        <h3 style="font-size: 18px; margin-bottom: 12px; line-height: 1.4;"><a href="news-detail.html?id=wind-resistance" style="color: var(--color-navy-dark); text-decoration: none; transition: var(--transition-fast);">Custom Heavy-Duty Sliding Assemblies for Wind Load Resistance</a></h3>
+                        <p style="font-size: 13px; color: var(--color-text-muted-dark); line-height: 1.6; margin-bottom: 20px;">Detailed analysis of Ebon's multi-point locking hardware setups and structural wind resistance calculations, engineered for high-altitude coastal skyscrapers.</p>
+                        <a href="news-detail.html?id=wind-resistance" style="color: var(--color-gold); font-size: 13px; font-weight: 600; margin-top: auto; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; transition: var(--transition-fast);">Read Full Article <i class="fas fa-chevron-right" style="font-size: 10px;"></i></a>
+                    </div>
+                </div>
+
+                <!-- Article 6 -->
+                <div class="news-featured-card reveal-el" style="background-color: var(--color-bg-light); border: 1px solid rgba(7, 22, 44, 0.05); border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--box-shadow-premium); display: flex; flex-direction: column; height: 100%;">
+                    <div style="height: 220px; overflow: hidden; position: relative;">
+                        <a href="news-detail.html?id=carbon-neutral" style="display: block; width: 100%; height: 100%;">
+                            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80" alt="Green manufacturing bases" style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-slow);">
+                        </a>
+                        <span style="position: absolute; top: 15px; left: 15px; background: var(--color-gold); color: var(--color-navy-dark); font-size: 10px; font-weight: 700; text-transform: uppercase; padding: 4px 10px; border-radius: 20px;">Eco Standards</span>
+                    </div>
+                    <div style="padding: 30px; display: flex; flex-direction: column; flex-grow: 1;">
+                        <span style="font-size: 12px; color: var(--color-text-muted-dark); font-weight: 500; margin-bottom: 12px; display: block;">May 30, 2025</span>
+                        <h3 style="font-size: 18px; margin-bottom: 12px; line-height: 1.4;"><a href="news-detail.html?id=carbon-neutral" style="color: var(--color-navy-dark); text-decoration: none; transition: var(--transition-fast);">EBON commits to Carbon-Neutral smart manufacturing</a></h3>
+                        <p style="font-size: 13px; color: var(--color-text-muted-dark); line-height: 1.6; margin-bottom: 20px;">EBON launches rooftop solar cells across our Foshan bases to cut electrical overheads and supply low carbon systems for global builders.</p>
+                        <a href="news-detail.html?id=carbon-neutral" style="color: var(--color-gold); font-size: 13px; font-weight: 600; margin-top: auto; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; transition: var(--transition-fast);">Read Full Article <i class="fas fa-chevron-right" style="font-size: 10px;"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================
+       4. LEAD CAPTURE & FOOTER WRAPPER
+       ======================================================================== -->
+    <div class="inquiry-footer-wrapper">
+        
+        <!-- CTA inquiry section -->
+        <section class="inquiry-cta-block">
+            <div class="container">
+                <div class="cta-text">
+                    <h3>Ready to Begin Your Project?</h3>
+                    <p>Contact our structural glass engineers for customized B2B specifications and dynamic CAD designs.</p>
+                </div>
+                <button class="btn-primary open-quote-modal" style="padding: 16px 36px; font-size: 15px;">
+                    Get A Free Quote <i class="fas fa-paper-plane" style="margin-left: 8px;"></i>
+                </button>
+            </div>
+        </section>
+        
+        <!-- Main Footer links -->
+        <footer class="main-footer">
+            <div class="container">
+                <!-- About Col -->
+                <div class="footer-column footer-about">
+                    <span class="logo-icon" style="font-size: 26px; color: #ffffff; margin-bottom: 20px; display: inline-block;">EBON</span>
+                    <p>Premium customized thermal break doors and windows engineered with high density profiles and extreme sealing integrity for commercial and residential estates.</p>
+                    <div style="display: flex; gap: 16px; color: var(--color-gold); font-size: 20px;">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Quick links -->
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="cases.html">Cases</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Products list -->
+                <div class="footer-column">
+                    <h4>Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="products.html?cat=doors">Doors Catalog</a></li>
+                        <li><a href="products.html?cat=windows">Windows Catalog</a></li>
+                        <li><a href="products.html?cat=glazing">Custom Facades</a></li>
+                        <li><a href="about.html">3i-Low-E Tech</a></li>
+                        <li><a href="about.html">Nylon Strips</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Newsletter -->
+                <div class="footer-column footer-subscribe">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our catalog updates and green building architectural papers.</p>
+                    <form class="subscribe-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!'); this.reset();">
+                        <input type="email" placeholder="Your Email Address" class="subscribe-input" required>
+                        <button type="submit" class="subscribe-btn" aria-label="Subscribe">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- Bottom bar -->
+        <div class="footer-bottom">
+            <div class="container">
+                <p>Copyright © 2026 Guangdong EBON Doors and Windows Industrial Co., Ltd. - All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================================
+       5. INTERACTIVE FLOATING SIDEBAR WIDGETS
+       ======================================================================== -->
+    <div class="floating-widgets">
+        <!-- Tel Widget -->
+        <a href="tel:+86-13392787196" class="floating-btn" aria-label="Call Ebon Support">
+            <i class="fas fa-phone"></i>
+            <span class="floating-tooltip">Call: +86-13392787196</span>
+        </a>
+        <!-- Whatsapp Widget -->
+        <a href="https://wa.me/8613392787196" target="_blank" class="floating-btn" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+            <span class="floating-tooltip">WhatsApp Live</span>
+        </a>
+        <!-- Dynamic Quote trigger -->
+        <button class="floating-btn open-quote-modal" aria-label="Open Quote Form">
+            <i class="fas fa-file-invoice"></i>
+            <span class="floating-tooltip">Get Free Quote</span>
+        </button>
+        <!-- Search Trigger placeholder -->
+        <button class="floating-btn" aria-label="Search Catalog">
+            <i class="fas fa-search"></i>
+            <span class="floating-tooltip">Search Catalog</span>
+        </button>
+    </div>
+
+    <!-- ========================================================================
+       6. QUOTE MODAL POPUP DIALOG
+       ======================================================================== -->
+    <div id="quoteModal" class="popup-modal-overlay">
+        <div class="quote-modal-box">
+            <button class="close-modal-btn" aria-label="Close Inquiry Dialog"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <h3>Get a Free Quote</h3>
+                <p>Submit your project specification and we will reply within 1 business day.</p>
+            </div>
+            
+            <form id="inquiryForm" class="inquiry-form-body">
+                <!-- Name & Company -->
+                <div class="form-group-row">
+                    <div class="form-group">
+                        <label for="inquiryName" class="form-label">Full Name</label>
+                        <input type="text" id="inquiryName" class="form-input" placeholder="e.g. John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inquiryCompany" class="form-label">Company Name</label>
+                        <input type="text" id="inquiryCompany" class="form-input" placeholder="e.g. Glazing Inc.">
+                    </div>
+                </div>
+                
+                <!-- Email & Phone -->
+                <div class="form-group-row">
+                    <div class="form-group">
+                        <label for="inquiryEmail" class="form-label">Email Address *</label>
+                        <input type="email" id="inquiryEmail" class="form-input" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inquiryPhone" class="form-label">WhatsApp/Phone</label>
+                        <input type="tel" id="inquiryPhone" class="form-input" placeholder="e.g. +1 555-0199">
+                    </div>
+                </div>
+                
+                <!-- Inquiry Message -->
+                <div class="form-group">
+                    <label for="inquiryMessage" class="form-label">Message / Project Requirements *</label>
+                    <textarea id="inquiryMessage" class="form-textarea" placeholder="Describe your window dimensions, glass specifications, and quantities needed..." required></textarea>
+                </div>
+                
+                <!-- Submit -->
+                <div style="text-align: center; margin-top: 30px;">
+                    <button type="submit" class="btn-primary" style="padding: 14px 40px; border-radius: 30px; width: 100%;">
+                        Submit Inquiry Request <i class="fas fa-paper-plane" style="margin-left: 8px;"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Client Script -->
+    <script src="app.js"></script>
+</body>
+</html>

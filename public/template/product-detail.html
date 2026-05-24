@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Product Details | EBON Aluminum Systems & Insulating Glass</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="View full technical specifications, U-value insulated ratings, CAD installation profiles, and wind load grades for EBON doors and windows.">
+    
+    <!-- Premium Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ========================================================================
+       1. STICKY HEADER
+       ======================================================================== -->
+    <header class="site-header scrolled">
+        <div class="container">
+            <!-- Brand Logo -->
+            <a href="index.html" class="brand-logo" aria-label="Ebon Home">
+                <img src="assets/logo.png" alt="EBON Logo" class="brand-logo-img">
+            </a>
+            
+            <!-- Desktop Navigation Menu -->
+            <nav class="main-navigation">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link active">Products <i class="fas fa-chevron-down" style="font-size: 10px; margin-left: 4px;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="products.html?cat=doors" class="dropdown-link">Doors Series</a></li>
+                            <li><a href="products.html?cat=windows" class="dropdown-link">Windows Series</a></li>
+                            <li><a href="products.html?cat=thermal" class="dropdown-link">Thermal-Break Systems</a></li>
+                            <li><a href="products.html?cat=glazing" class="dropdown-link">Custom Glazing</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="catalogue.html" class="nav-link">Download Catalogue</a></li>
+                    <li class="nav-item"><a href="cases.html" class="nav-link">Cases</a></li>
+                    <li class="nav-item"><a href="news.html" class="nav-link">News</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Header Right Utilities -->
+            <div class="header-actions">
+                <div class="lang-selector" aria-label="Select Language">
+                    <i class="fas fa-globe"></i>
+                    <span>EN</span>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+                <button class="btn-primary open-quote-modal" style="padding: 10px 20px; font-size: 12px; border-radius: 20px;">
+                    Get A Quote
+                </button>
+                <button class="btn-mobile-menu" aria-label="Toggle Mobile Navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================================================================
+       2. BREADCRUMBS BAR
+       ======================================================================== -->
+    <section class="breadcrumbs-section" style="padding: 120px 0 20px; background-color: var(--color-bg-light); border-bottom: 1px solid rgba(7,22,44,0.05);">
+        <div class="container">
+            <div style="font-size: 13px; color: var(--color-text-muted-dark); display: flex; gap: 8px; align-items: center;">
+                <a href="index.html" style="color: var(--color-navy-dark); font-weight: 500;">Home</a>
+                <i class="fas fa-chevron-right" style="font-size: 10px;"></i>
+                <a href="products.html" style="color: var(--color-navy-dark); font-weight: 500;">Products</a>
+                <i class="fas fa-chevron-right" style="font-size: 10px;"></i>
+                <span id="detailBreadcrumb" style="color: var(--color-gold); font-weight: 600;">Product Detail</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================
+       3. PRODUCT SYSTEM DETAILS (2-COLUMN SUMMARY)
+       ======================================================================== -->
+    <section class="product-summary-section" style="padding: 60px 0; background-color: #ffffff;">
+        <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: flex-start;">
+            
+            <!-- Left Column: Media Showcase & CAD Drawing -->
+            <div class="reveal-el">
+                <!-- Large Image Display & Video Container -->
+                <div style="border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--box-shadow-premium); border: 1px solid rgba(7,22,44,0.05); margin-bottom: 30px; position: relative;">
+                    <img id="detailMainImg" src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80" alt="Product Display" style="width: 100%; height: 450px; object-fit: cover;">
+                    <div id="videoPlayerContainer" style="display: none; width: 100%; height: 450px; background: #000;">
+                        <video id="detailVideo" controls style="width: 100%; height: 100%; object-fit: cover;"></video>
+                    </div>
+                </div>
+                
+                <!-- Assembly Thumbnails -->
+                <div style="display: flex; gap: 15px; margin-bottom: 40px;">
+                    <div style="flex: 1; height: 100px; border-radius: 6px; overflow: hidden; border: 2px solid var(--color-gold); cursor: pointer;">
+                        <img id="detailThumb1" src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=200&q=80" alt="Completed view" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div style="flex: 1; height: 100px; border-radius: 6px; overflow: hidden; border: 1px solid rgba(7,22,44,0.1); cursor: pointer; opacity: 0.7;" onclick="alert('Drawing sheet previewing! DWG file index loaded.');">
+                        <div style="background-color: var(--color-navy-dark); color: var(--color-gold); width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 10px;">
+                            <i class="fas fa-drafting-compass" style="font-size: 20px; margin-bottom: 6px;"></i>
+                            <span style="font-size: 10px; font-weight: 700; text-transform: uppercase;">CAD Cross Section</span>
+                        </div>
+                    </div>
+                    <div id="videoThumbBtn" style="flex: 1; height: 100px; border-radius: 6px; overflow: hidden; border: 1px solid rgba(7,22,44,0.1); cursor: pointer; opacity: 0.7;">
+                        <div style="background-color: var(--color-navy-dark); color: var(--color-gold); width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 10px;">
+                            <i class="fas fa-play-circle" style="font-size: 22px; margin-bottom: 6px;"></i>
+                            <span style="font-size: 10px; font-weight: 700; text-transform: uppercase;">Product Video</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CAD Blueprint Technical Spec Panel -->
+                <div style="background-color: var(--color-navy-dark); border: 1px solid var(--glass-border); border-radius: var(--border-radius); padding: 40px; color: #ffffff;">
+                    <h4 style="color: var(--color-gold); font-family: var(--font-headers); font-size: 16px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1.5px; border-bottom: 1px solid var(--glass-border); padding-bottom: 12px;"><i class="fas fa-microchip" style="margin-right: 8px;"></i> Integrated Structural Core</h4>
+                    <p style="font-size: 13px; color: var(--color-text-muted-light); line-height: 1.6; margin-bottom: 20px;">EBON's proprietary insulation extrusion is co-molded using EPDM foaming strips and high-purity glass fiber reinforced polyamide strip locks, creating structural isolation chambers that cut sound and energy bleed drastically.</p>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 12px; color: var(--color-text-muted-light);">
+                        <div><strong style="color: #ffffff;">Seal System:</strong> 3-Channel Co-extruded EPDM</div>
+                        <div><strong style="color: #ffffff;">Hardware Fit:</strong> German Standard C-Groove</div>
+                        <div><strong style="color: #ffffff;">Acoustic Cut:</strong> Sound Reduction ≥ 40 dB</div>
+                        <div><strong style="color: #ffffff;">Glazing Depth:</strong> Up to 48mm Structural Glass</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Column: System Spec Description & Quotation Trigger -->
+            <div class="reveal-el">
+                <span id="detailBadge" style="background: rgba(197, 168, 109, 0.1); color: var(--color-gold); font-size: 10px; font-weight: 700; text-transform: uppercase; padding: 6px 14px; border-radius: 20px; border: 1px solid var(--color-gold); display: inline-block; margin-bottom: 20px;">Thermal break</span>
+                
+                <h1 id="detailTitle" style="font-size: 32px; color: var(--color-navy-dark); font-family: var(--font-headers); line-height: 1.2; margin-bottom: 15px;">EBON Series-80 Casement System</h1>
+                
+                <p id="detailDesc" style="color: var(--color-text-muted-dark); font-size: 15px; line-height: 1.7; margin-bottom: 35px;">Advanced thermal break structures incorporating nylon heat barriers and triplepane structural glazing, designed to achieve maximum insulation performance across low temperature environments.</p>
+                
+                <!-- Quick Param Data Grid -->
+                <div style="background-color: var(--color-bg-light); border: 1px solid rgba(7, 22, 44, 0.05); border-radius: var(--border-radius); padding: 30px; margin-bottom: 40px;">
+                    <h4 style="font-size: 14px; text-transform: uppercase; color: var(--color-navy-dark); letter-spacing: 1px; margin-bottom: 20px; font-family: var(--font-headers);">Specification Matrix</h4>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 15px;">
+                        
+                        <div style="display: flex; justify-content: space-between; font-size: 13px; border-bottom: 1px solid rgba(7,22,44,0.05); padding-bottom: 10px;">
+                            <span style="color: var(--color-text-muted-dark);">Profile Aluminum Material</span>
+                            <strong id="specProfile" style="color: var(--color-navy-dark);">6063-T5 Alloy (1.8mm sash)</strong>
+                        </div>
+                        
+                        <div style="display: flex; justify-content: space-between; font-size: 13px; border-bottom: 1px solid rgba(7,22,44,0.05); padding-bottom: 10px;">
+                            <span style="color: var(--color-text-muted-dark);">Double/Triple Glazing Assembly</span>
+                            <strong id="specGlazing" style="color: var(--color-navy-dark);">5mm + 9Ar + 5mm + 9Ar + 5mm Triple</strong>
+                        </div>
+                        
+                        <div style="display: flex; justify-content: space-between; font-size: 13px; border-bottom: 1px solid rgba(7,22,44,0.05); padding-bottom: 10px;">
+                            <span style="color: var(--color-text-muted-dark);">Thermal Conductivity (U-Value)</span>
+                            <strong id="specUvalue" style="color: var(--color-gold); font-weight: 700;">≤ 1.2 W/m²K</strong>
+                        </div>
+                        
+                        <div style="display: flex; justify-content: space-between; font-size: 13px; border-bottom: 1px solid rgba(7,22,44,0.05); padding-bottom: 10px;">
+                            <span style="color: var(--color-text-muted-dark);">Wind Load Resistance Grade</span>
+                            <strong id="specWind" style="color: var(--color-navy-dark);">Class 8 (Typhoon Strength)</strong>
+                        </div>
+
+                        <div style="display: flex; justify-content: space-between; font-size: 13px; padding-bottom: 5px;">
+                            <span style="color: var(--color-text-muted-dark);">Accredited Certification</span>
+                            <strong id="specCert" style="color: var(--color-navy-dark);">CE / SGS / ISO 9001</strong>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- B2B Actions Panel -->
+                <div style="display: flex; gap: 20px;">
+                    <button class="btn-primary open-quote-modal" style="flex: 3; justify-content: center; padding: 16px;">
+                        Request CAD Quote <i class="fas fa-file-invoice" style="margin-left: 8px;"></i>
+                    </button>
+                    <a href="contact.html" class="btn-outline" style="flex: 2; justify-content: center; padding: 15px;">
+                        Direct Consultation
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- ========================================================================
+       4. EXTENDED TABS: DETAILS & DRAWING & CERTIFICATES
+       ======================================================================== -->
+    <section class="details-tab-section" style="padding: 100px 0; background-color: var(--color-bg-light); border-top: 1px solid rgba(7,22,44,0.05);">
+        <div class="container">
+            
+            <div style="border-bottom: 2px solid rgba(7,22,44,0.05); display: flex; gap: 30px; margin-bottom: 40px;">
+                <button class="tab-header-btn active" style="background:none; border:none; padding: 15px 5px; font-family: var(--font-headers); font-weight:700; font-size: 14px; text-transform: uppercase; color: var(--color-navy-dark); border-bottom: 3px solid var(--color-gold); cursor: pointer;">Technical Description</button>
+                <button class="tab-header-btn" style="background:none; border:none; padding: 15px 5px; font-family: var(--font-headers); font-weight:500; font-size: 14px; text-transform: uppercase; color: var(--color-text-muted-dark); cursor: pointer;" onclick="alert('Drawing schematic files index loaded. Blueprint requests will download dwg package.');">CAD Layout Schema</button>
+                <button class="tab-header-btn" style="background:none; border:none; padding: 15px 5px; font-family: var(--font-headers); font-weight:500; font-size: 14px; text-transform: uppercase; color: var(--color-text-muted-dark); cursor: pointer;" onclick="alert('All compliance credentials CE, SGS testing certifications loaded!');">Compliance Testing Reports</button>
+            </div>
+            
+            <div class="reveal-el" style="background-color: #ffffff; padding: 50px; border-radius: var(--border-radius); box-shadow: var(--box-shadow-premium); border: 1px solid rgba(7,22,44,0.05);">
+                <h3 style="font-size: 20px; color: var(--color-navy-dark); margin-bottom: 20px; font-family: var(--font-headers);">Advanced Thermal-Break Technology Integration</h3>
+                
+                <p style="color: var(--color-text-muted-dark); font-size: 14px; line-height: 1.8; margin-bottom: 20px;">EBON doors and windows utilize high-grade polyamide glass fiber reinforced strips (PA66GF25) which act as severe barrier walls inside the hollow structure of extruded aluminum alloy, stopping active thermal flow. Accompanied by triple seal barriers, double co-extruded EPDM gaskets, and specialized gas cavity seals, our thermal break system ensures maximum environmental shielding properties.</p>
+                
+                <p style="color: var(--color-text-muted-dark); font-size: 14px; line-height: 1.8; margin-bottom: 30px;">Furthermore, our 3i-Low-E triple-glazing architecture blocks 97% of harmful solar UV waves, significantly reducing building HVAC energy metrics to contribute to sustainable ecological building accreditations like LEED or BREEAM.</p>
+                
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+                    <div style="background-color: var(--color-bg-light); padding: 25px; border-radius: 6px;">
+                        <i class="fas fa-thermometer-half" style="font-size: 24px; color: var(--color-gold); margin-bottom: 12px;"></i>
+                        <h4 style="font-size: 15px; margin-bottom: 8px;">U-Value Performance</h4>
+                        <p style="font-size: 12px; color: var(--color-text-muted-dark);">Provides extreme insulation blocks, isolating temperatures between chambers smoothly.</p>
+                    </div>
+                    <div style="background-color: var(--color-bg-light); padding: 25px; border-radius: 6px;">
+                        <i class="fas fa-volume-mute" style="font-size: 24px; color: var(--color-gold); margin-bottom: 12px;"></i>
+                        <h4 style="font-size: 15px; margin-bottom: 8px;">Acoustic Isolation</h4>
+                        <p style="font-size: 12px; color: var(--color-text-muted-dark);">Integrated multi-point seals cancel external acoustic decibel waves up to 40dB.</p>
+                    </div>
+                    <div style="background-color: var(--color-bg-light); padding: 25px; border-radius: 6px;">
+                        <i class="fas fa-wind" style="font-size: 24px; color: var(--color-gold); margin-bottom: 12px;"></i>
+                        <h4 style="font-size: 15px; margin-bottom: 8px;">Extreme Sealing</h4>
+                        <p style="font-size: 12px; color: var(--color-text-muted-dark);">German import-grade hardware accessories prevent wind or rainwater leak assemblies.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- ========================================================================
+       5. LEAD CAPTURE & FOOTER WRAPPER
+       ======================================================================== -->
+    <div class="inquiry-footer-wrapper">
+        
+        <!-- CTA inquiry section -->
+        <section class="inquiry-cta-block">
+            <div class="container">
+                <div class="cta-text">
+                    <h3>Ready to Begin Your Project?</h3>
+                    <p>Contact our structural glass engineers for customized B2B specifications and dynamic CAD designs.</p>
+                </div>
+                <button class="btn-primary open-quote-modal" style="padding: 16px 36px; font-size: 15px;">
+                    Get A Free Quote <i class="fas fa-paper-plane" style="margin-left: 8px;"></i>
+                </button>
+            </div>
+        </section>
+        
+        <!-- Main Footer links -->
+        <footer class="main-footer">
+            <div class="container">
+                <!-- About Col -->
+                <div class="footer-column footer-about">
+                    <span class="logo-icon" style="font-size: 26px; color: #ffffff; margin-bottom: 20px; display: inline-block;">EBON</span>
+                    <p>Premium customized thermal break doors and windows engineered with high density profiles and extreme sealing integrity for commercial and residential estates.</p>
+                    <div style="display: flex; gap: 16px; color: var(--color-gold); font-size: 20px;">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Quick links -->
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="cases.html">Cases</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Products list -->
+                <div class="footer-column">
+                    <h4>Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="products.html?cat=doors">Doors Catalog</a></li>
+                        <li><a href="products.html?cat=windows">Windows Catalog</a></li>
+                        <li><a href="products.html?cat=glazing">Custom Facades</a></li>
+                        <li><a href="about.html">3i-Low-E Tech</a></li>
+                        <li><a href="about.html">Nylon Strips</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Newsletter -->
+                <div class="footer-column footer-subscribe">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our catalog updates and green building architectural papers.</p>
+                    <form class="subscribe-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!'); this.reset();">
+                        <input type="email" placeholder="Your Email Address" class="subscribe-input" required>
+                        <button type="submit" class="subscribe-btn" aria-label="Subscribe">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- Bottom bar -->
+        <div class="footer-bottom">
+            <div class="container">
+                <p>Copyright © 2026 Guangdong EBON Doors and Windows Industrial Co., Ltd. - All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================================
+       6. INTERACTIVE FLOATING SIDEBAR WIDGETS
+       ======================================================================== -->
+    <div class="floating-widgets">
+        <!-- Tel Widget -->
+        <a href="tel:+86-13392787196" class="floating-btn" aria-label="Call Ebon Support">
+            <i class="fas fa-phone"></i>
+            <span class="floating-tooltip">Call: +86-13392787196</span>
+        </a>
+        <!-- Whatsapp Widget -->
+        <a href="https://wa.me/8613392787196" target="_blank" class="floating-btn" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+            <span class="floating-tooltip">WhatsApp Live</span>
+        </a>
+        <!-- Dynamic Quote trigger -->
+        <button class="floating-btn open-quote-modal" aria-label="Open Quote Form">
+            <i class="fas fa-file-invoice"></i>
+            <span class="floating-tooltip">Get Free Quote</span>
+        </button>
+        <!-- Search Trigger placeholder -->
+        <button class="floating-btn" aria-label="Search Catalog">
+            <i class="fas fa-search"></i>
+            <span class="floating-tooltip">Search Catalog</span>
+        </button>
+    </div>
+
+    <!-- ========================================================================
+       7. QUOTE MODAL POPUP DIALOG
+       ======================================================================== -->
+    <div id="quoteModal" class="popup-modal-overlay">
+        <div class="quote-modal-box">
+            <button class="close-modal-btn" aria-label="Close Inquiry Dialog"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <h3>Get a Free Quote</h3>
+                <p>Submit your project specification and we will reply within 1 business day.</p>
+            </div>
+            
+            <form id="inquiryForm" class="inquiry-form-body">
+                <!-- Name & Company -->
+                <div class="form-group-row">
+                    <div class="form-group">
+                        <label for="inquiryName" class="form-label">Full Name</label>
+                        <input type="text" id="inquiryName" class="form-input" placeholder="e.g. John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inquiryCompany" class="form-label">Company Name</label>
+                        <input type="text" id="inquiryCompany" class="form-input" placeholder="e.g. Glazing Inc.">
+                    </div>
+                </div>
+                
+                <!-- Email & Phone -->
+                <div class="form-group-row">
+                    <div class="form-group">
+                        <label for="inquiryEmail" class="form-label">Email Address *</label>
+                        <input type="email" id="inquiryEmail" class="form-input" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inquiryPhone" class="form-label">WhatsApp/Phone</label>
+                        <input type="tel" id="inquiryPhone" class="form-input" placeholder="e.g. +1 555-0199">
+                    </div>
+                </div>
+                
+                <!-- Inquiry Message -->
+                <div class="form-group">
+                    <label for="inquiryMessage" class="form-label">Message / Project Requirements *</label>
+                    <textarea id="inquiryMessage" class="form-textarea" placeholder="Describe your window dimensions, glass specifications, and quantities needed..." required></textarea>
+                </div>
+                
+                <!-- Submit -->
+                <div style="text-align: center; margin-top: 30px;">
+                    <button type="submit" class="btn-primary" style="padding: 14px 40px; border-radius: 30px; width: 100%;">
+                        Submit Inquiry Request <i class="fas fa-paper-plane" style="margin-left: 8px;"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Client Script -->
+    <script src="app.js"></script>
+</body>
+</html>
